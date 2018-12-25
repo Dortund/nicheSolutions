@@ -6,6 +6,7 @@ First some configurations need to be adressed in the .env file:
   - Set DB_DATABASE to the name of the database to be used
   - Set DB_USERNAME to the login username of the database
   - Set DB_PASSWORD to the password associated with the database username login
+- Set your application key using 'php artisan key:generate'
 
 Run the following to setup a database and setup a basic admin user:
 - php artisan migrate:fresh
