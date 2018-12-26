@@ -13,6 +13,7 @@ class UsersTableSeeder extends Seeder {
      */
     public function run() {
         self::addUserIfNotExists('admin', 'admin@nichesolutions.nl', 'admin');
+        self::addUserIfNotExists('klant', 'klant@nichesolutions.nl', 'klant');
     }
     
     public static function addUserIfNotExists($name, $email, $pass) {
