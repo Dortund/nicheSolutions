@@ -59,6 +59,10 @@
                                         {{ __('Users') }}
                                     </a>
 
+                                    <a class="dropdown-item" href="{{ route('admin.customers.index') }}">
+                                        {{ __('Customers') }}
+                                    </a>
+
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

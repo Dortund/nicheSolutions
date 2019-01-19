@@ -37,4 +37,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::middleware('auth')->prefix('admin')->name('admin.')->group(function(){
 
     Route::resource('users', 'UserController');
+    Route::resource('customers', 'CustomerController');
+    Route::resource('projects', 'ProjectController');
+    Route::resource('shops', 'ShopController');
+    Route::resource('stocks', 'StockController');
+    Route::resource('receipts', 'ReceiptController');
+    Route::resource('receipt_lines', 'ReceiptLineController');
+    Route::resource('project_orders', 'ProjectOrderController');
 });

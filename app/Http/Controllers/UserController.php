@@ -15,7 +15,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::paginate(2);
+        $users = User::paginate(10);
 
         return view('users.index')
             ->with('users', $users);
@@ -26,8 +26,9 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(User $user)
+    public function create()
     {
+        $user = new User;
         return view('users.create')
             ->with('user', $user)
             ->with('method', 'POST')
